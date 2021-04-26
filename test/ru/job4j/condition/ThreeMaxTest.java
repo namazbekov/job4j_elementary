@@ -2,7 +2,6 @@ package ru.job4j.condition;
 
 import org.junit.Assert;
 import org.junit.Test;
-
 public class ThreeMaxTest {
     @Test
     public void firstMax() {
