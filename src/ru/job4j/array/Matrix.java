@@ -7,9 +7,8 @@ public class Matrix {
         int[][] data = new int[size][size];
         for (int i = 0; i < data.length; i++) {
             for (int j = 0; j < data[i].length; j++) {
-                if (data[i] == data[j]) {
-                     result *= data[i][j];
-                }
+                data[i][j] = (i + 1) * (j + 1);
+
             }
         }
         return result;
