@@ -6,21 +6,21 @@ import org.junit.Test;
 public class MinDiapasonTest {
     @Test
     public void whenFirstMin() {
-        int[] array = new int[] {-1, 0, 5, 10};
+        int[] array = new int[] {0, 0, 5, -1};
         int start = 1;
         int finish = 3;
         int result = MinDiapason.findMin(array, start, finish);
-        int expected = 0;
+        int expected = -1;
         Assert.assertEquals(expected, result);
     }
 
     @Test
     public void whenLastMin() {
         int[] array = new int[] {10, 5, 3, 1};
-        int start = 1;
+        int start = 0;
         int finish = 3;
         int result = MinDiapason.findMin(array, start, finish);
-        int expected = 3;
+        int expected = 1;
         Assert.assertEquals(expected, result);
     }
 
