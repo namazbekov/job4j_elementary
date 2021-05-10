@@ -10,10 +10,12 @@ public class Machine  {
             if (money >= price) {
                 money = money - price;
             }
-            if (money >= coins[size]) {
-                rsl[index] = coins[size];
-                money = money - coins[size];
-                size++;
+            for (int j : coins) {
+                while (money >= coins[size]) {
+                    money = money - coins[size];
+                    rsl[index] = coins[size];
+                    size++;
+                }
             }
         }
         return Arrays.copyOf(rsl, size);
