@@ -9,7 +9,7 @@ public class Defragment {
                     int notNullIndex = j;
                     if (array[j] != null) {
                         SwitchArray.swapStr(array, nullIndex, notNullIndex );
-                        nullIndex++;
+                        break;
                     }
                 }
             }
